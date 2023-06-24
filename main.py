@@ -11,11 +11,11 @@ stock_name = "tesla"
 news_url = "https://newsapi.org/v2/everything"
 stock_url = f"https://www.alphavantage.co/query"
 
-alpha_vantage_api_key = "MIBVRFZTKYD6537G"
-newsapi_key = "6073aed26ec24dd590e291e7c5ddab17"
+alpha_vantage_api_key = "API KEY"
+newsapi_key = "API KEY"
 
-twilio_account_sid = "AC1db8ff9313987a8cd30ca98b0d42edc4"
-twilio_auth_token = "0fd86924f672b622be73d1ce4249d8d7"
+twilio_account_sid = "TWILIO SID"
+twilio_auth_token = "AUTH TOKEN"
 
 stock_parameters = {
     "function" : time_frame,
@@ -50,7 +50,7 @@ def send_message(msg) :
     message = client.messages.create(
                                 from_='whatsapp:+14155238886',
                                 body=msg,
-                                to='whatsapp:+916379564694'
+                                to='whatsapp: YOUR NUMBER'
                             )
 
     print(message.sid)
